@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Page</title>
+  <link rel="stylesheet" href="iPhone_styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 로고 -->
+    <div class="logo-box">
+      <img src="logo.jpg" alt="SpinRecipe Logo" class="logo">
+    </div>
+
+    <!-- 이미지 박스 -->
+    <div class="image-box">
+      <img src="1.webp" alt="Penne Arrabbiata" class="recipe-image">
+      <div class="text-row">
+        <span class="title">Penne<br>Arrabbiata</span>
+        <span class="prep-cook-time">Prep: 10 min<br>Cook: 30 min</span>
+      </div>
+    </div>
+
+    <!-- 재료 목록 -->
+    <div class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li><input type="checkbox" id="ingredient1"> <label for="ingredient1">1 pound penne rigate</label></li>
+        <li><input type="checkbox" id="ingredient2"> <label for="ingredient2">3 Tablespoons olive oil</label></li>
+        <li><input type="checkbox" id="ingredient3"> <label for="ingredient3">3 cloves garlic</label></li>
+        <li><input type="checkbox" id="ingredient4"> <label for="ingredient4">1/4 teaspoon crushed red pepper flakes</label></li>
+        <li><input type="checkbox" id="ingredient5"> <label for="ingredient5">1 28-ounce can whole peeled tomatoes</label></li>
+      </ul>
+    </div>
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <ol>
+        <li><span class="instruction-item" onclick="toggleBold(this)">Cook pasta in a large pot of boiling water, according to package instructions, until tender.</span></li>
+        <li><span class="instruction-item" onclick="toggleBold(this)">Heat olive oil in a large skillet over medium heat. Add garlic and crushed red pepper; cook, stirring for 30 seconds.</span></li>
+        <li><span class="instruction-item" onclick="toggleBold(this)">Add tomatoes, crushing them roughly with the back of a wooden spoon, and tomato paste. Simmer for 5-10 minutes.</span></li>
+        <li><span class="instruction-item" onclick="toggleBold(this)">When pasta is cooked, drain the water and add it to the sauce. Toss well.</span></li>
+        <li><span class="instruction-item" onclick="toggleBold(this)">Serve immediately topped with grated pecorino or parmesan cheese and fresh parsley.</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="iPhone_script.js"></script>
+</body>
+</html>
+
