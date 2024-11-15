@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Antonio:wght@100..700&family=Dosis:wght@200..800&family=Fjord+One&family=Homemade+Apple&family=Permanent+Marker&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Page</title>
@@ -34,16 +35,29 @@
       </ul>
     </div>
     <div class="instructions">
-      <h2>Instructions</h2>
-      <ol>
-        <li><span class="instruction-item" onclick="toggleBold(this)">Cook pasta in a large pot of boiling water, according to package instructions, until tender.</span></li>
-        <li><span class="instruction-item" onclick="toggleBold(this)">Heat olive oil in a large skillet over medium heat. Add garlic and crushed red pepper; cook, stirring for 30 seconds.</span></li>
-        <li><span class="instruction-item" onclick="toggleBold(this)">Add tomatoes, crushing them roughly with the back of a wooden spoon, and tomato paste. Simmer for 5-10 minutes.</span></li>
-        <li><span class="instruction-item" onclick="toggleBold(this)">When pasta is cooked, drain the water and add it to the sauce. Toss well.</span></li>
-        <li><span class="instruction-item" onclick="toggleBold(this)">Serve immediately topped with grated pecorino or parmesan cheese and fresh parsley.</span></li>
-      </ol>
+  <h2>Instructions</h2>
+  <ol class="instruction-list">
+    <li><span class="instruction-item" onclick="toggleBold(this)">1. Cook pasta in a large pot of boiling water, according to package instructions, until tender.</span></li>
+    <li><span class="instruction-item" onclick="toggleBold(this)">2. Heat olive oil in a large skillet over medium heat. Add garlic and crushed red pepper; cook, stirring for 30 seconds.</span></li>
+    <li><span class="instruction-item" onclick="toggleBold(this)">3. Add tomatoes, crushing them roughly with the back of a wooden spoon, and tomato paste. Simmer for 5-10 minutes.</span></li>
+    <li><span class="instruction-item" onclick="toggleBold(this)">4. When pasta is cooked, drain the water and add it to the sauce. Toss well.</span></li>
+    <li><span class="instruction-item" onclick="toggleBold(this)">5. Serve immediately topped with grated pecorino or parmesan cheese and fresh parsley.</span></li>
+  </ol>
+</div>
+</div>
+
+ <!-- 스핀 버튼 -->
+    <div class="spin-box">
+      <button class="spin-button" onclick="showPopup()">SPIN</button>
     </div>
-  </div>
+
+    <!-- 팝업 -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p>Spinning for a new recipe!</p>
+      </div>
+    </div>
 
   <script src="iPhone_script.js"></script>
 </body>
